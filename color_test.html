@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head><title>Color Extractor</title></head><body>
+<img id='logo' src='LOGO/LOGO.png' crossorigin='anonymous' />
+<canvas id='c'></canvas>
+<script>
+window.onload = function() {
+  const img = document.getElementById('logo');
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  canvas.width = img.width; canvas.height = img.height;
+  ctx.drawImage(img, 0, 0, img.width, img.height);
+  const data = ctx.getImageData(0, 0, img.width, img.height).data;
+  const colors = {};
+  for (let i = 0; i < data.length; i += 4) {
+    if(data[i+3] < 100) continue; // ignore transparent
+    const r = Math.round(data[i] / 10) * 10;
+    const g = Math.round(data[i+1] / 10) * 10;
+    const b = Math.round(data[i+2] / 10) * 10;
+    const key = r+','+g+','+b;
+    colors[key] = (colors[key] || 0) + 1;
+  }
+  let max = 0; let dom = '';
+  // exclude white/black/grays
+  for (let c in colors) {
+    const [r,g,b] = c.split(',').map(Number);
+    if (Math.abs(r-g)<20 && Math.abs(g-b)<20) continue; 
+    if (colors[c] > max) { max = colors[c]; dom = c; }
+  }
+  console.log('Dominant color RGB: ' + dom);
+  document.body.innerHTML += '<h1>' + dom + '</h1>';
+};
+</script></body></html>

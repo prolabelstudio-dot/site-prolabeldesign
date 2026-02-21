@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProLabel Design | Estúdio de Marcas e Rótulos</title>
+    <meta name="description"
+        content="Estúdio especializado em design de marcas deslumbrantes e rótulos de alta conversão.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar" role="banner">
+        <div class="nav-container">
+            <a href="#hero" class="logo-link" aria-label="Ir para o início - ProLabel Design">
+                <img src="LOGO/LOGO ICONE BRANCA.png" alt="Ícone ProLabel Design" class="nav-logo">
+            </a>
+            <nav class="nav-links" aria-label="Navegação Principal">
+                <a href="#about" class="nav-item">O Estúdio</a>
+                <a href="#portfolio" class="nav-item">Projetos</a>
+                <a href="#contact" class="nav-button" aria-label="Entrar em contato">Fazer Orçamento</a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" role="navigation">
+        <a href="#about" class="mobile-link">O Estúdio</a>
+        <a href="#portfolio" class="mobile-link">Projetos</a>
+        <a href="#contact" class="mobile-button">Fazer Orçamento</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+
+            <!-- Background orbs -->
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-orb hero-orb-1"></div>
+                <div class="hero-orb hero-orb-2"></div>
+                <div class="hero-orb hero-orb-3"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Estúdio de Design Premium
+                </div>
+
+                <h1 class="hero-title" id="hero-title">
+                    Design que<br>
+                    <span class="highlight">Vende.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Transformamos a visão do seu negócio em marcas e rótulos de alto padrão
+                    que conquistam mercados e são escolhidos em fração de segundos.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-accent" aria-label="Explorar nossos projetos">Ver Projetos</a>
+                    <a href="#about" class="btn btn-ghost" aria-label="Saiba mais sobre nós">O Estúdio</a>
+                </div>
+            </div>
+
+            <!-- Scroll hint -->
+            <div class="hero-scroll-hint" aria-hidden="true">
+                <div class="hero-scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- Marquee Strip -->
+        <div class="marquee-strip" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span class="marquee-item">Design de Marcas</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Rótulos Premium</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Identidade Visual</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Design Estratégico</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Embalagens</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Branding</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Alto Impacto</span>
+                    <span class="marquee-sep">✦</span>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="marquee-content" aria-hidden="true">
+                    <span class="marquee-item">Design de Marcas</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Rótulos Premium</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Identidade Visual</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Design Estratégico</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Embalagens</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Branding</span>
+                    <span class="marquee-sep">✦</span>
+                    <span class="marquee-item">Alto Impacto</span>
+                    <span class="marquee-sep">✦</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="section-header" data-reveal>
+                <span class="section-label">Portfólio</span>
+                <h2 class="section-title">Nossos Trabalhos</h2>
+                <p class="section-desc">Explore nossa galeria de projetos, separados por categoria.</p>
+            </div>
+
+            <div class="portfolio-filters" data-reveal data-delay="1">
+                <button class="filter-btn active" data-filter="Todos">Todos</button>
+                <button class="filter-btn" data-filter="Marcas">Marcas</button>
+                <button class="filter-btn" data-filter="Rótulos">Rótulos</button>
+            </div>
+
+            <!-- Populated by JS / Swiper -->
+            <div class="portfolio-slider-container" aria-label="Carrossel de Projetos">
+                <div class="swiper portfolio-swiper">
+                    <div class="swiper-wrapper" id="portfolio-wrapper" aria-live="polite">
+                        <!-- Project Cards will go here as slides -->
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Navigation -->
+                <button class="swiper-button-prev" aria-label="Slide anterior"></button>
+                <button class="swiper-button-next" aria-label="Próximo slide"></button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="about-container">
+                <div class="about-content">
+                    <span class="section-label" data-reveal>O Estúdio</span>
+                    <h2 class="section-title" id="about-title" data-reveal data-delay="1">Porque Escolher<br>a ProLabel?</h2>
+                    <p class="about-text" data-reveal data-delay="2">
+                        Nós não fazemos apenas "desenhos bonitos". Somos especialistas estratégicos focados na conversão
+                        do seu produto. Entendemos a gôndola, a psicologia do consumidor e a materialidade da embalagem.
+                        Nossa missão é fazer o seu rótulo ser escolhido em fração de segundos.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat" data-reveal data-delay="1">
+                            <div class="stat-value">
+                                <span class="stat-number" data-count="80">0</span>
+                                <span class="stat-suffix">+</span>
+                            </div>
+                            <p class="stat-label">Projetos Entregues</p>
+                        </div>
+                        <div class="stat" data-reveal data-delay="2">
+                            <div class="stat-value">
+                                <span class="stat-number" data-count="5">0</span>
+                                <span class="stat-suffix">+</span>
+                            </div>
+                            <p class="stat-label">Anos de Experiência</p>
+                        </div>
+                        <div class="stat" data-reveal data-delay="3">
+                            <div class="stat-value">
+                                <span class="stat-number" data-count="100">0</span>
+                                <span class="stat-suffix">%</span>
+                            </div>
+                            <p class="stat-label">Satisfação Garantida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image" data-reveal data-delay="2" aria-hidden="true">
+                    <img src="LOGO/LOGO.png" alt="" class="about-logo-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="contact-container">
+                <span class="contact-label" data-reveal>Próximo Passo</span>
+                <h2 class="section-title" id="contact-title" data-reveal data-delay="1">
+                    Pronto para<br>elevar sua marca?
+                </h2>
+                <p class="section-desc" data-reveal data-delay="2">
+                    Vamos criar algo extraordinário juntos. Solicite um orçamento sem compromisso
+                    e descubra o que a ProLabel pode fazer pelo seu produto.
+                </p>
+                <a href="mailto:contato@prolabel.com.br" class="btn btn-accent contact-btn" data-reveal data-delay="3"
+                    aria-label="Enviar email para orçamento">Solicitar Orçamento</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="LOGO/LOGO ICONE BRANCA.png" alt="ProLabel Design" class="footer-icon">
+            <p>&copy; 2026 ProLabel Design. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-overlay" id="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content-wrapper">
+            <button class="modal-close" id="modal-close" aria-label="Fechar Galeria de Projeto">&times;</button>
+            <h3 class="modal-title" id="modal-title"></h3>
+            <p class="modal-instruction" aria-hidden="true">Deslize para ver mais detalhes</p>
+            <div class="swiper modal-swiper" aria-label="Carrossel de Detalhes do Projeto">
+                <div class="swiper-wrapper" id="modal-wrapper">
+                    <!-- Project Detail Images will go here -->
+                </div>
+                <div class="swiper-pagination modal-pagination"></div>
+                <button class="swiper-button-prev modal-prev" aria-label="Imagem Anterior"></button>
+                <button class="swiper-button-next modal-next" aria-label="Próxima Imagem"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
