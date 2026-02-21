@@ -890,7 +890,7 @@ h1, h2, h3, h4 {
     font-variant-numeric: tabular-nums;
 }
 
-.stat-suffix {
+.stat-suffix, .stat-prefix {
     font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 800;
     color: var(--accent);
