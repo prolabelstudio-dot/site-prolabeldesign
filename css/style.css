@@ -1070,6 +1070,11 @@ h1, h2, h3, h4 {
     color: rgba(255, 255, 255, 0.25);
     font-size: 0.82rem;
     letter-spacing: 0.04em;
+    line-height: 1.6;
+}
+
+.footer-location {
+    opacity: 0.85;
 }
 
 /* ============================================================
