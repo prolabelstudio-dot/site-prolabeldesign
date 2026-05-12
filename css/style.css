@@ -1021,8 +1021,15 @@ h1, h2, h3, h4 {
     font-size: clamp(1rem, 1.3vw, 1.2rem);
 }
 
-.contact-btn {
+.contact-ctas {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     margin-top: 52px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
     font-size: 1rem;
     padding: 20px 52px;
 }
