@@ -592,6 +592,63 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================================
+   Services Section
+   ============================================================ */
+.services {
+    padding: 100px 5%;
+    background: var(--bg-dark);
+}
+
+.services-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    position: relative;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.service-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-8px);
+}
+
+.service-number {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 24px;
+    letter-spacing: 0.1em;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-on-dark);
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.service-desc {
+    color: var(--text-on-dark-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ============================================================
    Portfolio Section
    ============================================================ */
 .portfolio {
